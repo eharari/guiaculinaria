@@ -34,8 +34,9 @@ function  Home() {
         <div className="fondoprincipal">
             <Header/>
           
-        
-            <h3>Sugerencias</h3>
+          <div className="ideas">
+            <p>Algunas Ideas del Momento</p>
+          </div>
           {collections.map((collection)=>{
               return <Card
               title = {collection.title}

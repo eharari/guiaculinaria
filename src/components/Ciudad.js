@@ -25,7 +25,7 @@ function Ciudad() {
         
       
         <form onSubmit={Ciudad}>  
-        <label>En que Ciudad?</label>
+        <label >En que Ciudad?</label>
     
                 <select 
                 className='form-control'
@@ -43,7 +43,7 @@ function Ciudad() {
                 })}
 
                 </select>
-            <button type="submit" className="btn btn-danger">Selecionar Ciudad</button>
+            <button type="submit" className="botoncategoria btn btn-danger">Selecionar Ciudad</button>
         </form>
        
         </header>

@@ -9,7 +9,7 @@ import Card2 from "../../Card/Card2";
 
 function  Busqueda() {
     const [restaurants, setRestaurant] = useState([]);
-    const URL = 'https://developers.zomato.com/api/v2.1/search?entity_id={props.entity_id}&cuisines={props.cuisine_id}';
+    const URL = `https://developers.zomato.com/api/v2.1/search?entity_id="280"&cuisines="25"`;
     useEffect(()=>{
       axios.get(URL, {headers:{
         'Authorization': `token: 497fa3288a3074bb6f83d495ad22312c`
@@ -25,26 +25,46 @@ function  Busqueda() {
     return (
         <div className="fondoprincipal">
             <Header/>
+            <div className="container otro">
+              <form action="">
+                <div class="row row-cols-2">
+                   <div class="col">
+                      <Categoria/>
+                    </div>
+                    <div class="col">
+                      <Ciudad/>
+                     </div>
+                     <div className="botonbusqueda">
+                    <button type="submit" className="btn btn-info btn-lg">Buscar</button>
+                    </div>
+                </div>
+            </form>
+          </div>
             
-        
-            <Categoria/>
-            <Ciudad/>
-            
+          
+          <div className="container otro">
+              <form action="">
+                <div class="row row-cols-2">
+                    <div className="sugerencias">
+                      <p>Sugerencias</p>
+                    </div>
+                    <div>
+                    {restaurants.map((restaurant)=>{
+                        return <Card2
+                        name = {restaurant.name}
+                        cuisine = {restaurant.cuisine}
+                        menu = {restaurant.menu}
+                        phone_numbers = {restaurant.phone_numbers}
+                        key = {restaurant._id}
+                        />
+                        
+                    })}
+                    </div>
 
-            <button type="submit" className="btn btn-danger">Buscar</button>
-            <h3>Sugerencias</h3>
-          {restaurants.map((restaurant)=>{
-              return <Card2
-              name = {restaurant.name}
-              cuisine = {restaurant.cuisine}
-              menu = {restaurant.menu}
-              phone_numbers = {restaurant.phone_numbers}
-              key = {restaurant._id}
-              />
-              
-          })}
 
-
+                </div>
+              </form>
+            </div>
         </div>
     )
 }

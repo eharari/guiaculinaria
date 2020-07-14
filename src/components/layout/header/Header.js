@@ -14,7 +14,7 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/Busqueda">
-              Inicia tu Busqueda
+              Haz tu Busqueda
             </Link>
             
           </li>

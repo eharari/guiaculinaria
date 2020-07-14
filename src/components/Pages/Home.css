@@ -1,1 +1,11 @@
-.fondoprincipal {background-color: aqua; background-image: url(http://www.coastlinenservices.com/wp-content/uploads/2019/02/restaurant-table-stting-ideas.jpg);}
+.fondoprincipal {background-color: rgb(229, 240, 240); 
+            background-image: url(http://www.coastlinenservices.com/wp-content/uploads/2019/02/restaurant-table-stting-ideas.jpg);
+            font-size: 34px;
+}
+
+.ideas  {font-size: 44px;
+        font-family: cursive;
+        color: darkgoldenrod;
+        text-align: center;
+       
+}

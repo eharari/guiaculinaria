@@ -32,9 +32,9 @@ function Categoria() {
                 className='form-control'
                 name = "cocina"
               
-                // onChange={(event) =>{
-                // setCocina(event.target.value);
-                // }}
+                onChange={(event) =>{
+                setCocina(event.target.value);
+                }}
                 >
                 
                 <option value="0">Selecciona una opcion</option> 
@@ -44,7 +44,7 @@ function Categoria() {
                 })}
                 
                 </select>
-            <button type="submit" className="btn btn-danger">Selecionar Cocina</button>
+            <button type="submit" className="botoncategoria btn btn-danger">Selecionar Cocina</button>
         </form>
        
         </header>

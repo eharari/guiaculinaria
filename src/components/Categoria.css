@@ -1,1 +1,10 @@
-.principal2 {margin-top: 300px;}
+.principal2 {font-size: 45px;
+    color: rgb(212, 235, 241)
+            
+            }
+
+.botoncategoria:hover {transition-duration: 0.4s;
+                        background-color: cadetblue;
+                        color: darkcyan;
+
+}
