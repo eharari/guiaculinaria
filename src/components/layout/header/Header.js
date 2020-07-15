@@ -8,19 +8,27 @@ function Header() {
        <nav className="navbar navbar-expand-lg navbar-light">
         <ul className="nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link className=" inicio1 nav-link" to="/">
               Inicio
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/Busqueda">
+            <Link className="busqueda2 nav-link" to="/Busqueda">
               Haz tu Busqueda
             </Link>
-            
+            </li>
+          <li className="logo1">
+            <p></p>
           </li>
          
         </ul>
       </nav>
+
+      {/* <li className="logo1">
+            <p></p>
+          </li> */}
+
+
     </header>
     )
 }

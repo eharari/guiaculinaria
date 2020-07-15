@@ -1,1 +1,18 @@
-.fondoheader1   {background-color: rgb(97, 152, 214);}
+.fondoheader1   {background-color: rgb(97, 152, 214);
+            
+   
+
+}
+.logo1 {list-style-image: url(http://imageog.flaticon.com/icons/png/512/45/45605.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF);
+    
+    max-block-size: 10px;
+    
+}       
+
+.inicio1    {}
+
+
+/* .logo1 {list-style-image: url(https://i.pinimg.com/originals/6e/45/8c/6e458c5c2c3038766eab5a6321337de2.png);
+    https://www.creativefabrica.com/wp-content/uploads/2019/08/Restaurant-Logo-by-Koko-Store-580x386.jpg
+    size: 15px;
+}        */

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Header from "../layout/header/Header";
+import Footer from "../layout/Footer";
 import "./Home.css";
 import axios from 'axios';
 import Card from "../../Card/Card";
@@ -17,7 +18,7 @@ function  Home() {
     // >
     
     
-    const URL = 'https://developers.zomato.com/api/v2.1/collections?lat={lat1}&lon={lon1}}';
+    const URL = 'https://developers.zomato.com/api/v2.1/collections?city_id=280';
     useEffect(()=>{
       axios.get(URL, {headers:{
         'Authorization': `token: 497fa3288a3074bb6f83d495ad22312c`
@@ -47,6 +48,9 @@ function  Home() {
               />
               
           })}
+          <div className="footer1">
+          <Footer/>
+          </div>
 
 
         </div>
