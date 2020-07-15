@@ -13,7 +13,7 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/Busqueda">
+            <Link className="nav-link" to="/Busqueda1">
               Haz tu Busqueda
             </Link>
             

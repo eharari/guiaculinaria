@@ -17,7 +17,7 @@ function  Home() {
     // >
     
     
-    const URL = 'https://developers.zomato.com/api/v2.1/collections?lat={lat1}&lon={lon1}}';
+    const URL = 'https://developers.zomato.com/api/v2.1/collections?city_id=280';
     useEffect(()=>{
       axios.get(URL, {headers:{
         'Authorization': `token: 497fa3288a3074bb6f83d495ad22312c`

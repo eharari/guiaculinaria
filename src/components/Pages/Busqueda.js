@@ -40,7 +40,9 @@ function  Busqueda() {
                 </div>
             </form>
           </div>
-            
+            <Ciudad>
+              props
+            </Ciudad>
           
           <div className="container otro">
               <form action="">
